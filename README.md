@@ -26,9 +26,9 @@ These are invented examples. Percentages are estimates from task milestones; a t
 
 Dot is not required to update your own task when the official tools are present. Installing this Skill does not add tools or expand permissions.
 
-![Before and after with generic tasks in 280px lists](docs/activity-title-comparison-en.png)
+![Before and after: 12 generic tasks in 300px dark lists](docs/activity-title-comparison-en.png)
 
-**Example tasks / UI illustration, not a screenshot.** Both lists are 280px wide; the right side can truncate. The complete title is shown separately. No private activity is included.
+**Example tasks / UI illustration, not a screenshot.** Both lists are 300 logical pixels wide, enlarged together for clarity; the right side can truncate. All 12 tasks match one-to-one. No private activity is included.
 
 Useful when you switch between several Codex tasks and want to identify the next useful step without opening each conversation.
 
@@ -102,9 +102,9 @@ The self-contained [acceptance cases](codex-skill/activity-title/references/acce
 
 **任务开多了，哪项在推进、哪项在等人、哪项真的完成？**
 
-![通用任务的四区标题前后对比](docs/activity-title-comparison-zh.png)
+![12项通用任务的深色Activity标题前后对比](docs/activity-title-comparison-zh.png)
 
-**示例任务 / 界面示意，不是截图。** 两列同为280px，右侧可能截断；图下单列完整标题内容，不扩宽列表伪造可见性。
+**示例任务 / 界面示意，不是截图。** 两列同为300逻辑像素，整体放大便于查看，12项任务一一对应；右侧保留截断，没有单独撑宽列表。
 
 这个小 Skill 把 Codex Activity 标题变成四区状态栏：
 
