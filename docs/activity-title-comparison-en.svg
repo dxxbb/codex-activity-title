@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="680" viewBox="0 0 900 680" role="img" aria-labelledby="title desc">
+<title id="title">Too many tasks? Find the next step.</title><desc id="desc">Synthetic tasks in equal-width 280px illustrative lists. Not a screenshot. The full title may truncate on the right.</desc>
+<rect width="900" height="680" rx="22" fill="#f5f7fb"/>
+<g font-family="system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+<text x="46" y="66" font-size="30" fill="#243348" font-weight="700">Too many tasks? Find the next step.</text>
+<text x="46" y="101" font-size="18" fill="#617083" font-weight="400">State, task, elapsed and progress in one Activity title</text>
+<rect x="110" y="142" width="280" height="302" rx="12" fill="#fff" stroke="#dce3ed"/>
+<text x="125" y="174" font-size="14" fill="#64758a" font-weight="600">BEFORE</text>
+<path d="M125 188H375" stroke="#e7ebf2"/>
+<rect x="510" y="142" width="280" height="302" rx="12" fill="#fff" stroke="#dce3ed"/>
+<text x="525" y="174" font-size="14" fill="#64758a" font-weight="600">AFTER</text>
+<path d="M525 188H775" stroke="#e7ebf2"/>
+<path d="M418 294H474 M466 286L474 294L466 302" fill="none" stroke="#8ca0b5" stroke-width="2"/>
+<defs><clipPath id="left"><rect x="125" y="198" width="250" height="231"/></clipPath><clipPath id="right"><rect x="525" y="198" width="250" height="231"/></clipPath></defs>
+<g clip-path="url(#left)"><text x="125" y="221" font-size="14" fill="#243348" font-weight="400">Test API</text></g>
+<g clip-path="url(#right)"><text x="525" y="221" font-size="13" fill="#243348" font-weight="400">🟢 │ 🧪API test │ 8m │ ~60%pass→…</text></g>
+<text x="525" y="241" font-size="11" fill="#7a8798" font-weight="400">Moving</text>
+<g clip-path="url(#left)"><text x="125" y="276" font-size="14" fill="#243348" font-weight="400">Prepare report</text></g>
+<g clip-path="url(#right)"><text x="525" y="276" font-size="13" fill="#243348" font-weight="400">🙋 │ 📄Report │ ?m │ —%need sam…</text></g>
+<text x="525" y="296" font-size="11" fill="#7a8798" font-weight="400">Needs input</text>
+<g clip-path="url(#left)"><text x="125" y="331" font-size="14" fill="#243348" font-weight="400">Fix export</text></g>
+<g clip-path="url(#right)"><text x="525" y="331" font-size="13" fill="#243348" font-weight="400">✅ │ 🔧Export │ 12m │ 100%verified</text></g>
+<text x="525" y="351" font-size="11" fill="#7a8798" font-weight="400">Accepted</text>
+<g clip-path="url(#left)"><text x="125" y="386" font-size="14" fill="#243348" font-weight="400">Test format</text></g>
+<g clip-path="url(#right)"><text x="525" y="386" font-size="13" fill="#243348" font-weight="400">❌ │ 🧪Format │ 7m │ —%attempt f…</text></g>
+<text x="525" y="406" font-size="11" fill="#7a8798" font-weight="400">Attempt failed</text>
+<text x="46" y="479" font-size="12" fill="#64758a" font-weight="600">FULL TITLE CONTENT</text>
+<text x="46" y="507" font-size="18" fill="#243348" font-weight="400">🟢 │ 🧪API test │ 8m │ ~60%pass→edges</text>
+<text x="46" y="543" font-size="17" fill="#243348" font-weight="400">Retry event: 🟢 │ 🧪Format │ 22m │ —%retrying</text>
+<text x="46" y="572" font-size="14" fill="#617083" font-weight="400">A same-scope retry keeps the first start. One attempt is not the project.</text>
+<text x="46" y="610" font-size="14" fill="#617083" font-weight="400">Lists are 280px wide. The right side can truncate; full titles keep four parts.</text>
+<text x="46" y="644" font-size="12" fill="#7a8798" font-weight="400">Example tasks / UI illustration · Default font · Event updates, not a live timer</text>
+</g></svg>

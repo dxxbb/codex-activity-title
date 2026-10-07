@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="680" viewBox="0 0 900 680" role="img" aria-labelledby="title desc">
+<title id="title">任务开多了，一眼找到下一步。</title><desc id="desc">Synthetic tasks in equal-width 280px illustrative lists. Not a screenshot. The full title may truncate on the right.</desc>
+<rect width="900" height="680" rx="22" fill="#f5f7fb"/>
+<g font-family="system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,sans-serif">
+<text x="46" y="66" font-size="30" fill="#243348" font-weight="700">任务开多了，一眼找到下一步。</text>
+<text x="46" y="101" font-size="18" fill="#617083" font-weight="400">状态、任务、耗时与进展，放进同一条 Activity 标题</text>
+<rect x="110" y="142" width="280" height="302" rx="12" fill="#fff" stroke="#dce3ed"/>
+<text x="125" y="174" font-size="14" fill="#64758a" font-weight="600">使用前</text>
+<path d="M125 188H375" stroke="#e7ebf2"/>
+<rect x="510" y="142" width="280" height="302" rx="12" fill="#fff" stroke="#dce3ed"/>
+<text x="525" y="174" font-size="14" fill="#64758a" font-weight="600">使用后</text>
+<path d="M525 188H775" stroke="#e7ebf2"/>
+<path d="M418 294H474 M466 286L474 294L466 302" fill="none" stroke="#8ca0b5" stroke-width="2"/>
+<defs><clipPath id="left"><rect x="125" y="198" width="250" height="231"/></clipPath><clipPath id="right"><rect x="525" y="198" width="250" height="231"/></clipPath></defs>
+<g clip-path="url(#left)"><text x="125" y="221" font-size="14" fill="#243348" font-weight="400">API测试</text></g>
+<g clip-path="url(#right)"><text x="525" y="221" font-size="13" fill="#243348" font-weight="400">🟢 │ 🧪API测试 │ 8m │ ~60%接口通…</text></g>
+<text x="525" y="241" font-size="11" fill="#7a8798" font-weight="400">推进中</text>
+<g clip-path="url(#left)"><text x="125" y="276" font-size="14" fill="#243348" font-weight="400">报告整理</text></g>
+<g clip-path="url(#right)"><text x="525" y="276" font-size="13" fill="#243348" font-weight="400">🙋 │ 📄报告整理 │ ?m │ —%等样本</text></g>
+<text x="525" y="296" font-size="11" fill="#7a8798" font-weight="400">等用户</text>
+<g clip-path="url(#left)"><text x="125" y="331" font-size="14" fill="#243348" font-weight="400">导出修复</text></g>
+<g clip-path="url(#right)"><text x="525" y="331" font-size="13" fill="#243348" font-weight="400">✅ │ 🔧导出修复 │ 12m │ 100%已验收</text></g>
+<text x="525" y="351" font-size="11" fill="#7a8798" font-weight="400">已验收</text>
+<g clip-path="url(#left)"><text x="125" y="386" font-size="14" fill="#243348" font-weight="400">格式测试</text></g>
+<g clip-path="url(#right)"><text x="525" y="386" font-size="13" fill="#243348" font-weight="400">❌ │ 🧪格式测试 │ 7m │ —%本次失败</text></g>
+<text x="525" y="406" font-size="11" fill="#7a8798" font-weight="400">本次失败</text>
+<text x="46" y="479" font-size="12" fill="#64758a" font-weight="600">完整标题内容</text>
+<text x="46" y="507" font-size="18" fill="#243348" font-weight="400">🟢 │ 🧪API测试 │ 8m │ ~60%接口通→查边界</text>
+<text x="46" y="543" font-size="17" fill="#243348" font-weight="400">重试事件：🟢 │ 🧪格式测试 │ 22m │ —%重试</text>
+<text x="46" y="572" font-size="14" fill="#617083" font-weight="400">同一范围重试保留首次开始；失败不等于整个项目失败。</text>
+<text x="46" y="610" font-size="14" fill="#617083" font-weight="400">列表宽 280px；右侧可能截断。完整标题仍保留四区。</text>
+<text x="46" y="644" font-size="12" fill="#7a8798" font-weight="400">示例任务 / 界面示意 · 默认比例字体 · 按事件更新，非实时计时器</text>
+</g></svg>

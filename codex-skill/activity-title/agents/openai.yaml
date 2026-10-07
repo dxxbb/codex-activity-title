@@ -1,0 +1,3 @@
+interface:
+  display_name: "Activity Title"
+  short_description: "Readable task status in Codex Activity titles"
