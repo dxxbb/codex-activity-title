@@ -38,7 +38,7 @@
 <text x="529" y="184" font-size="13" fill="#a0a0a0" font-weight="400">Recent activity</text>
 <defs><clipPath id="after"><rect x="542" y="199" width="255" height="370"/></clipPath></defs>
 <circle cx="530" cy="214" r="5" fill="none" stroke="#777777" stroke-width="1"/>
-<g clip-path="url(#after)"><text x="542" y="218" font-size="13" fill="#eeeeee" font-weight="400">🟢 │ 🧪API test │ 8m │ ~60%pass→e…</text></g>
+<g clip-path="url(#after)"><text x="542" y="218" font-size="13" fill="#eeeeee" font-weight="400">🔵 │ 🧪API test │ 8m │ ~60%pass→e…</text></g>
 <circle cx="530" cy="244" r="5" fill="none" stroke="#777777" stroke-width="1"/>
 <g clip-path="url(#after)"><text x="542" y="248" font-size="13" fill="#eeeeee" font-weight="400">🙋 │ 📄Report │ 18m │ —%need sam…</text></g>
 <circle cx="530" cy="274" r="5" fill="none" stroke="#777777" stroke-width="1"/>
@@ -46,11 +46,11 @@
 <circle cx="530" cy="304" r="5" fill="none" stroke="#777777" stroke-width="1"/>
 <g clip-path="url(#after)"><text x="542" y="308" font-size="13" fill="#eeeeee" font-weight="400">⌛ │ 🔌Integration │ 6m │ —%need env</text></g>
 <circle cx="530" cy="334" r="5" fill="none" stroke="#777777" stroke-width="1"/>
-<g clip-path="url(#after)"><text x="542" y="338" font-size="13" fill="#eeeeee" font-weight="400">🟢 │ 🧪Format │ 21m │ ~40%read→ty…</text></g>
+<g clip-path="url(#after)"><text x="542" y="338" font-size="13" fill="#eeeeee" font-weight="400">🔵 │ 🧪Format │ 21m │ ~40%read→ty…</text></g>
 <circle cx="530" cy="364" r="5" fill="none" stroke="#777777" stroke-width="1"/>
 <g clip-path="url(#after)"><text x="542" y="368" font-size="13" fill="#eeeeee" font-weight="400">🙋 │ 🔎Logs │ 42m │ —%need repro</text></g>
 <circle cx="530" cy="394" r="5" fill="none" stroke="#777777" stroke-width="1"/>
-<g clip-path="url(#after)"><text x="542" y="398" font-size="13" fill="#eeeeee" font-weight="400">🟢 │ ⚡Cache │ 11m │ —%check hits</text></g>
+<g clip-path="url(#after)"><text x="542" y="398" font-size="13" fill="#eeeeee" font-weight="400">🔵 │ ⚡Cache │ 11m │ —%check hits</text></g>
 <circle cx="530" cy="424" r="5" fill="none" stroke="#777777" stroke-width="1"/>
 <g clip-path="url(#after)"><text x="542" y="428" font-size="13" fill="#eeeeee" font-weight="400">📋 │ 📦Release │ ?m │ —%not started</text></g>
 <circle cx="530" cy="454" r="5" fill="none" stroke="#777777" stroke-width="1"/>
