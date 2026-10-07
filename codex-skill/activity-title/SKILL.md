@@ -1,11 +1,11 @@
 ---
 name: activity-title
 description: Generate and update compact Codex Activity titles that show task status, identity, elapsed time, and evidence-based progress. Use when asked to maintain task titles or make the Activity list easier to scan; give a suggestion when official title tools are unavailable.
-metadata:
-  version: "0.1"
 ---
 
 # Activity Title
+
+Version: 0.1.
 
 Turn the title of the requested task into a truthful, compact status line. Use the language the user explicitly requests, otherwise the current task's conversation language. English installation examples and these instructions do not force English titles. Apply this convention only to the task(s) they requested. A suggestion-only request must not write a title.
 
