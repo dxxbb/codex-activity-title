@@ -28,7 +28,7 @@ Choose a state only when its evidence is present:
 | Icon | Enter when | Leave when |
 | --- | --- | --- |
 | 📋 | The task is explicitly not started | Work begins |
-| 🟢 | Work is actually advancing | Another evidenced state applies |
+| 🔵 | Work is actually advancing | Another evidenced state applies |
 | ⌛ | A named dependency/resource is pending, with a release condition | The dependency clears |
 | 🙋 | A necessary request awaits the user's response | The response allows work to continue |
 | ⏸️ | There is an explicit pause decision | Work resumes or is cancelled |
@@ -59,7 +59,7 @@ Budget a short name at roughly 4–5 Chinese characters' visual width; English u
 Synthetic examples:
 
 ```text
-🟢 │ 📄报告整理 │ 18m │ ~60%提纲已定→补引用
+🔵 │ 📄报告整理 │ 18m │ ~60%提纲已定→补引用
 🙋 │ 🧪Check │ 42m │ —%need sample
 ✅ │ 🔧Export │ 12m │ 100%verified
 ❌ │ 🧪功能验证 │ 12m │ —%本次未达标

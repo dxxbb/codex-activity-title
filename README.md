@@ -10,7 +10,7 @@ status │ project icon + task │ elapsed │ progress + result → current act
 
 | Before: a task name | After: a useful status line |
 | --- | --- |
-| Prepare report | 🟢 │ 📄Report │ 18m │ ~60%outline done→cite |
+| Prepare report | 🔵 │ 📄Report │ 18m │ ~60%outline done→cite |
 | Check feature | 🙋 │ 🧪Check │ 42m │ —%need sample |
 | Fix export | ✅ │ 🔧Export │ 12m │ 100%verified |
 
@@ -71,7 +71,7 @@ Follow your runtime's skill reload guidance; installation alone does not prove t
 | Status | Meaning |
 | --- | --- |
 | 📋 | Not started |
-| 🟢 | In progress |
+| 🔵 | In progress |
 | ⌛ | Waiting for a dependency or resource |
 | 🙋 | Waiting for the user |
 | ⏸️ | Deliberately paused |
@@ -110,7 +110,7 @@ The self-contained [acceptance cases](codex-skill/activity-title/references/acce
 
 ```text
 状态 │ 项目图标短任务 │ 耗时 │ 估算%已达成→当前动作
-🟢 │ 📄报告整理 │ 18m │ ~60%提纲已定→补引用
+🔵 │ 📄报告整理 │ 18m │ ~60%提纲已定→补引用
 🙋 │ 🧪功能验证 │ 42m │ —%等待样本
 ✅ │ 🔧导出修复 │ 12m │ 100%验收通过
 ```

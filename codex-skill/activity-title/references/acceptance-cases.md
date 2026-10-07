@@ -6,7 +6,7 @@ Use these as behavioral checks for the Skill, with mocked read/write tools when 
 | --- | --- | --- |
 | Cross-turn elapsed | Same task starts at t=0; sampled at t=2,520,000 ms; wait spans t=600,000–1,800,000; latest turn lasts 180,000 ms | `42m`, including the wait; never `3m` |
 | Accepted freeze | Acceptance at t=2,520,000; rename/support at t=9,720,000 | ✅, `42m`, `100%`; no current-action arrow |
-| Failed freeze/retry | Same scope first starts at t=0; attempt ends at t=720,000; idle review at t=3,600,000; same-scope retry at t=4,200,000 | ❌ `12m` while ended; retry 🟢 `1h10m` from original start; do not mark the project failed |
+| Failed freeze/retry | Same scope first starts at t=0; attempt ends at t=720,000; idle review at t=3,600,000; same-scope retry at t=4,200,000 | ❌ `12m` while ended; retry 🔵 `1h10m` from original start; do not mark the project failed |
 | Missing start | Only recent-turn data is known | `?m`, not the recent-turn duration |
 | Bad anchors | End precedes start, or scope cannot be matched | `?m`; state must still follow its own evidence |
 | Under one minute | Full task span 59,999 ms | `<1m`, not `1m` |
