@@ -17,7 +17,11 @@ Keep four sections with ` │ ` between them, including the separator immediatel
 
 ## Scope and status
 
-Identify the concrete work named by the title and its acceptance criteria from the request and available task evidence. Preserve that scope across turns, waits and renames. A retry within the same scope keeps its first start. New follow-up work needs its own scope; it must not extend the completed original task's elapsed time.
+Distinguish the user's **Task** (requested outcome and acceptance) from a **Session** (an execution context with a concrete scope). This title represents the requested Session. Bind its scope to the user's request or an explicit, traceable delegation; do not silently narrow an unfinished goal into a diagnosis, candidate list or prototype to manufacture completion. Use business-acceptance and Task → current Session evidence supplied by the task owner/coordinator, or the current Session's explicit request and records. This Skill displays those evidenced facts and does not redefine the user's goal.
+
+Prefer continuing the same work chain in the same Session. A milestone alone is an achieved fact, not a terminal event. An independently accepted Session scope may end while the larger Task stays open only when the unfinished work has a traceable successor that has actually accepted the handoff and started. Read the recorded acceptance and successor evidence; coordination owns the handoff and Task tracking. Do not create a new Session merely to change a title. An active successor may later wait or become blocked; do not mark the whole Task delivered or fabricate running work. Without a successor, preserve unfinished tracking and a concrete next step. Do not undo valid accepted Session history merely because its larger Task remains open.
+
+Preserve the evidenced Session scope across turns, waits and renames. A retry within the same unfinished scope keeps its first start. A genuinely new scope must not extend the completed original scope's elapsed time.
 
 Choose a state only when its evidence is present:
 

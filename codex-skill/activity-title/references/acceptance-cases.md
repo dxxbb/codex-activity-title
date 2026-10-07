@@ -27,6 +27,11 @@ Use these as behavioral checks for the Skill, with mocked read/write tools when 
 | Mismatch | Write reports success, read returns another title | Report unconfirmed/mismatching update and stop; no blind retry |
 | Tools missing | No official read or write tool | Suggested title only; no database, UI, private endpoint or unofficial fallback |
 | Capability boundary | Ordinary task with official tools / manager with no other-target authorization / CLI without title tools | Self-update allowed / no other-target mutation / suggestions only; no implied tools or permissions |
+| Milestone inside one Session | A candidate list is complete, but the same Session still owns validating the requested result | Show the milestone as achieved; no terminal delivery or 100%; use the evidenced current state and next action |
+| Accepted Session with started successor | An explicitly bounded scope is accepted; the successor accepted the complete handoff and actually started; the larger Task remains open | Old Session may use ✅/100% for its accepted scope; successor shows actual advancing state; retain the original successor reference and keep the Task open |
+| Stage result without successor | A stage artifact is sound, but the requested outcome remains unfinished and no successor accepted/started | Do not close tracking just because the internal stage ended; report the concrete next step without fabricating active work |
+| Waiting successor | Old scope accepted and handed off; successor now waits on a named dependency | Preserve accepted old history, show the successor's evidenced wait; do not imply the Task is all delivered or running |
+| Scope narrowing | Diagnosis/candidates/prototype finished, but the executor renamed the scope without an explicit request/delegation | Reject the manufactured completion; preserve the actual requested scope and its unfinished acceptance |
 | Preview request | User says suggest only; official tools are available | Never write |
 
 Validation should inspect behavior and evidence, not insist on one exact result/action phrase. A proportional-font visual check remains separate from semantic correctness. No title convention can guarantee that a very narrow list displays its entire right side.
