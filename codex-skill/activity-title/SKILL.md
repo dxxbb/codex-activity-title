@@ -28,20 +28,20 @@ Choose a state only when its evidence is present:
 | Icon | Enter when | Leave when |
 | --- | --- | --- |
 | 📋 | The task is explicitly not started | Work begins |
-| 🔵 | Work is actually advancing on the agreed path | A correction or another evidenced state applies |
+| 🟢 | Work is actually advancing on the agreed path | A correction or another evidenced state applies |
 | ⚠️ | A concrete deviation needs or is undergoing correction; record its owner, corrective action and review point | Effective review confirms the correction; use the actual resulting state, or a specific wait/pause/transfer decision |
 | ↪️ | Responsibility has moved to a real successor that accepted the complete handoff and actually started; retain its reference | Follow any newly evidenced responsibility change; this is not delivery acceptance |
 | ⌛ | A named dependency/resource is pending, with a release condition | The dependency clears |
 | 🙋 | A necessary request awaits the user's response | The response allows work to continue |
 | ⏸️ | There is an explicit pause decision | Work resumes or is cancelled |
-| ✅ | The named deliverable meets its acceptance criteria | A new scope is established; do not undo accepted history for unrelated follow-up |
+| ☑️ | The named deliverable meets its acceptance criteria | A new scope is established; do not undo accepted history for unrelated follow-up |
 | 🚫 | There is an explicit cancellation decision | A new scope is explicitly restarted |
 
 When evidence conflicts, use the fact that currently determines the next step. Runtime `idle`, a finished tool call, or a final assistant message is not proof of acceptance, pause, failure, or cancellation. If the state is unknown, do not invent a fallback icon: preserve the current title and explain the missing state evidence outside it. Do not add other states without agreeing on their meaning and entry/exit conditions.
 
-Failure (❌) and blockage (⛔) are temporary diagnoses, not lasting terminal dispositions. Preserve the failed attempt and blocker in the original Session evidence, then display the evidenced next disposition: authorized execution, correction, confirmed transfer, a necessary user/external wait, explicit pause/cancellation, or accepted delivery. The task owner/coordinator must resolve an undecided disposition; this title Skill must not fabricate recovery, invent a wait or silently cancel the user's Task. A temporarily preserved old diagnostic title is stale/unconfirmed: proactively explain the pending owner disposition outside it, then update on the established disposition event; do not leave it as the current final status. Active diagnosis can be correction only with a specific deviation, responsible owner, corrective action and review point. ⚠️ does not itself mean the user must intervene: a necessary user response uses 🙋 and a named external release condition uses ⌛. Do not restore 🔵 merely because a workaround was proposed or a tool ended; first verify the correction and the actual current state.
+Failure (❌) and blockage (⛔) are temporary diagnoses, not lasting terminal dispositions. Preserve the failed attempt and blocker in the original Session evidence, then display the evidenced next disposition: authorized execution, correction, confirmed transfer, a necessary user/external wait, explicit pause/cancellation, or accepted delivery. The task owner/coordinator must resolve an undecided disposition; this title Skill must not fabricate recovery, invent a wait or silently cancel the user's Task. A temporarily preserved old diagnostic title is stale/unconfirmed: proactively explain the pending owner disposition outside it, then update on the established disposition event; do not leave it as the current final status. Active diagnosis can be correction only with a specific deviation, responsible owner, corrective action and review point. ⚠️ does not itself mean the user must intervene: a necessary user response uses 🙋 and a named external release condition uses ⌛. Do not restore 🟢 merely because a workaround was proposed or a tool ended; first verify the correction and the actual current state.
 
-Use ↪️ for confirmed transfer of unresolved responsibility, not a planned handoff or an unstarted successor. An independently accepted old Session keeps ✅ and its accepted history rather than changing to ↪️ merely because the larger Task continues. Keep the successor reference outside the compact title; do not claim 100% for transfer.
+Use ↪️ for confirmed transfer of unresolved responsibility, not a planned handoff or an unstarted successor. An independently accepted old Session keeps ☑️ and its accepted history rather than changing to ↪️ merely because the larger Task continues. Keep the successor reference outside the compact title; do not claim 100% for transfer.
 
 ## Elapsed time and progress
 
@@ -51,7 +51,7 @@ Freeze elapsed time when this Session's responsibility actually ends through sco
 
 Format known elapsed time by flooring, never rounding up: below one minute `<1m`; below one hour `18m`; below one day `1h5m` (omit zero minutes); one day or more `1d2h` (omit zero hours). Keep full anchors in the task evidence so this compact display can be recomputed; it is not a live timer.
 
-Progress comes from predefined acceptance milestones and their weights, not elapsed time, tokens, agent counts or test pass ratios. Sum the accepted milestones to form a defensible estimate, displayed as `~N%` from 0–99. If milestones/weights are unknown, show `—%`. Do not invent weights after the fact. When everything looks complete but acceptance is pending, retain a defensible estimate below 100 or use `—%`; never imply acceptance with an arbitrary 99. Only an accepted named deliverable uses `100%` with ✅.
+Progress comes from predefined acceptance milestones and their weights, not elapsed time, tokens, agent counts or test pass ratios. Sum the accepted milestones to form a defensible estimate, displayed as `~N%` from 0–99. If milestones/weights are unknown, show `—%`. Do not invent weights after the fact. When everything looks complete but acceptance is pending, retain a defensible estimate below 100 or use `—%`; never imply acceptance with an arbitrary 99. Only an accepted named deliverable uses `100%` with ☑️.
 
 In the final section, put an established result before `→` and the actual current action or wait object after it. With no established result, omit that part and the arrow. With no current action, omit the arrow. Accepted, transferred and cancelled Sessions omit a current-action arrow; describe the scoped outcome. Other states show the actual next action or wait object when known. Do not create a result just to fill the field.
 
@@ -64,9 +64,9 @@ Budget a short name at roughly 4–5 Chinese characters' visual width; English u
 Synthetic examples:
 
 ```text
-🔵 │ 📄报告整理 │ 18m │ ~60%提纲已定→补引用
+🟢 │ 📄报告整理 │ 18m │ ~60%提纲已定→补引用
 🙋 │ 🧪Check │ 42m │ —%need sample
-✅ │ 🔧Export │ 12m │ 100%verified
+☑️ │ 🔧Export │ 12m │ 100%verified
 ⚠️ │ 🧩布局检查 │ 4m │ —%偏差已查→修布局
 ↪️ │ 🧪功能验证 │ 12m │ —%已转交
 ```

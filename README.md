@@ -10,9 +10,9 @@ status │ project icon + task │ elapsed │ progress + result → current act
 
 | Before: a task name | After: a useful status line |
 | --- | --- |
-| Prepare report | 🔵 │ 📄Report │ 18m │ ~60%outline done→cite |
+| Prepare report | 🟢 │ 📄Report │ 18m │ ~60%outline done→cite |
 | Check feature | 🙋 │ 🧪Check │ 42m │ —%need sample |
-| Fix export | ✅ │ 🔧Export │ 12m │ 100%verified |
+| Fix export | ☑️ │ 🔧Export │ 12m │ 100%verified |
 
 These are invented examples. Percentages are estimates from task milestones; a title is not a live timer.
 
@@ -73,13 +73,13 @@ Follow your runtime's skill reload guidance; installation alone does not prove t
 | Status | Meaning |
 | --- | --- |
 | 📋 | Not started |
-| 🔵 | Advancing on the agreed path |
+| 🟢 | Advancing on the agreed path |
 | ⚠️ | A specific deviation needs correction or is being corrected |
 | ↪️ | Responsibility transferred to an accepted, started successor |
 | ⌛ | Waiting for a dependency or resource |
 | 🙋 | Waiting for the user |
 | ⏸️ | Deliberately paused |
-| ✅ | Delivered within this task's acceptance scope |
+| ☑️ | Delivered within this task's acceptance scope |
 | 🚫 | Explicitly cancelled |
 
 A Task is the user's outcome; a Session is its agreed execution scope. Titles display that Session's evidenced facts without silently reducing the Task's goal. Failure/blockage diagnoses remain in its details; the owner must establish the next disposition. Correction needs a specific deviation, owner, action and review point, and restores the actual state only after effective review. Confirmed transfer requires a successor that accepted and started; it does not mean accepted delivery.
@@ -115,9 +115,9 @@ The self-contained [acceptance cases](codex-skill/activity-title/references/acce
 
 ```text
 状态 │ 项目图标短任务 │ 耗时 │ 估算%已达成→当前动作
-🔵 │ 📄报告整理 │ 18m │ ~60%提纲已定→补引用
+🟢 │ 📄报告整理 │ 18m │ ~60%提纲已定→补引用
 🙋 │ 🧪功能验证 │ 42m │ —%等待样本
-✅ │ 🔧导出修复 │ 12m │ 100%验收通过
+☑️ │ 🔧导出修复 │ 12m │ 100%验收通过
 ```
 
 英文 Skill 正文是执行规范，输出优先遵循用户明确指定的语言，否则沿用当前任务的交流语言；英文安装代码块不会把标题强制改成英文。可用中文安装：“用 skill-installer 从本仓库的 codex-skill/activity-title 安装 activity-title”；使用：“用 $activity-title，在任务状态变化时更新当前标题”。
@@ -126,7 +126,7 @@ The self-contained [acceptance cases](codex-skill/activity-title/references/acce
 
 当前运行时可能暴露官方 `cloud_threads.rename` 或其他官方标题入口，须以实际 schema 为准，不能由管理端的成功推断普通 Session 都有。成功写入返回 exact ID/title 是官方写入回执；独立回读是另一层证据。read/list 没有标题字段时，明确报告“写入成功、独立回读不可用”，不宣称已独立读回或用户已看到，也不重复覆盖成功的写入。
 
-🔵 表示正常推进；⚠️ 表示具体偏差待纠正或正在纠偏，须有负责人、动作与复核点，复核有效才恢复真实状态；↪️ 须有真实承接并已开始的后继。需用户协助用 🙋，等具体外部条件用 ⌛，明确暂停用 ⏸️。失败与阻塞是详情里的临时诊断，负责人仍须落实处置，不能永久留叉或擅自取消。已验收的旧 Session 保留 ✅，转交本身不代表验收。
+🟢 表示正常推进；⚠️ 表示具体偏差待纠正或正在纠偏，须有负责人、动作与复核点，复核有效才恢复真实状态；↪️ 须有真实承接并已开始的后继。需用户协助用 🙋，等具体外部条件用 ⌛，明确暂停用 ⏸️。失败与阻塞是详情里的临时诊断，负责人仍须落实处置，不能永久留叉或擅自取消。已验收的旧 Session 保留 ☑️，转交本身不代表验收。
 
 耗时对应标题这项 Session 范围的首次开始，包含纠偏与等待；验收、真实转交或明确取消使该范围责任结束后才冻结。未知写 `?m` / `—%`，进度估算带 `~`，具体交付通过验收才显示 `100%`。它按事件更新，不是后台实时计时器；默认比例字体，窄列表仍可能省略右侧文字。
 

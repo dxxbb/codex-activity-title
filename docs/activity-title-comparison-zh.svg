@@ -38,19 +38,19 @@
 <text x="529" y="184" font-size="13" fill="#a0a0a0" font-weight="400">Recent activity</text>
 <defs><clipPath id="after"><rect x="542" y="199" width="255" height="370"/></clipPath></defs>
 <circle cx="530" cy="214" r="5" fill="none" stroke="#777777" stroke-width="1"/>
-<g clip-path="url(#after)"><text x="542" y="218" font-size="13" fill="#eeeeee" font-weight="400">🔵 │ 🧪API测试 │ 8m │ ~60%接口通…</text></g>
+<g clip-path="url(#after)"><text x="542" y="218" font-size="13" fill="#eeeeee" font-weight="400">🟢 │ 🧪API测试 │ 8m │ ~60%接口通…</text></g>
 <circle cx="530" cy="244" r="5" fill="none" stroke="#777777" stroke-width="1"/>
 <g clip-path="url(#after)"><text x="542" y="248" font-size="13" fill="#eeeeee" font-weight="400">🙋 │ 📄报告整理 │ 18m │ —%等样本</text></g>
 <circle cx="530" cy="274" r="5" fill="none" stroke="#777777" stroke-width="1"/>
-<g clip-path="url(#after)"><text x="542" y="278" font-size="13" fill="#eeeeee" font-weight="400">✅ │ 🔧导出修复 │ 12m │ 100%已验收</text></g>
+<g clip-path="url(#after)"><text x="542" y="278" font-size="13" fill="#eeeeee" font-weight="400">☑️ │ 🔧导出修复 │ 12m │ 100%已验收</text></g>
 <circle cx="530" cy="304" r="5" fill="none" stroke="#777777" stroke-width="1"/>
 <g clip-path="url(#after)"><text x="542" y="308" font-size="13" fill="#eeeeee" font-weight="400">⌛ │ 🔌接口联调 │ 6m │ —%等环境</text></g>
 <circle cx="530" cy="334" r="5" fill="none" stroke="#777777" stroke-width="1"/>
-<g clip-path="url(#after)"><text x="542" y="338" font-size="13" fill="#eeeeee" font-weight="400">🔵 │ 🧪格式校验 │ 21m │ ~40%读入通…</text></g>
+<g clip-path="url(#after)"><text x="542" y="338" font-size="13" fill="#eeeeee" font-weight="400">🟢 │ 🧪格式校验 │ 21m │ ~40%读入通…</text></g>
 <circle cx="530" cy="364" r="5" fill="none" stroke="#777777" stroke-width="1"/>
 <g clip-path="url(#after)"><text x="542" y="368" font-size="13" fill="#eeeeee" font-weight="400">🙋 │ 🔎日志定位 │ 42m │ —%等复现…</text></g>
 <circle cx="530" cy="394" r="5" fill="none" stroke="#777777" stroke-width="1"/>
-<g clip-path="url(#after)"><text x="542" y="398" font-size="13" fill="#eeeeee" font-weight="400">🔵 │ ⚡缓存核验 │ 11m │ —%查命中</text></g>
+<g clip-path="url(#after)"><text x="542" y="398" font-size="13" fill="#eeeeee" font-weight="400">🟢 │ ⚡缓存核验 │ 11m │ —%查命中</text></g>
 <circle cx="530" cy="424" r="5" fill="none" stroke="#777777" stroke-width="1"/>
 <g clip-path="url(#after)"><text x="542" y="428" font-size="13" fill="#eeeeee" font-weight="400">📋 │ 📦发布准备 │ ?m │ —%待开始</text></g>
 <circle cx="530" cy="454" r="5" fill="none" stroke="#777777" stroke-width="1"/>
@@ -60,7 +60,7 @@
 <circle cx="530" cy="514" r="5" fill="none" stroke="#777777" stroke-width="1"/>
 <g clip-path="url(#after)"><text x="542" y="518" font-size="13" fill="#eeeeee" font-weight="400">⚠️ │ 🧩布局检查 │ 7m │ —%偏差已查…</text></g>
 <circle cx="530" cy="544" r="5" fill="none" stroke="#777777" stroke-width="1"/>
-<g clip-path="url(#after)"><text x="542" y="548" font-size="13" fill="#eeeeee" font-weight="400">✅ │ 📄文档整理 │ 15m │ 100%已验收</text></g>
+<g clip-path="url(#after)"><text x="542" y="548" font-size="13" fill="#eeeeee" font-weight="400">☑️ │ 📄文档整理 │ 15m │ 100%已验收</text></g>
 <path d="M425 359H474 M466 351L474 359L466 367" fill="none" stroke="#797979" stroke-width="2"/>
 <text x="65" y="616" font-size="12" fill="#a0a0a0" font-weight="400">示例任务 / 界面示意</text>
 <text x="690" y="616" font-size="12" fill="#a0a0a0" font-weight="400">同宽窄列表，保留截断</text>
