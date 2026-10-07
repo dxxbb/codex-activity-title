@@ -10,7 +10,7 @@ status │ project icon + task │ elapsed │ progress + result → current act
 
 | Before: a task name | After: a useful status line |
 | --- | --- |
-| Prepare report | 🔵 │ 📄Report │ 18m │ ~60%outline done→cite |
+| Prepare report | ▶️ │ 📄Report │ 18m │ ~60%outline done→cite |
 | Check feature | 🙋 │ 🧪Check │ 42m │ —%need sample |
 | Fix export | ✅ │ 🔧Export │ 12m │ 100%verified |
 
@@ -71,15 +71,18 @@ Follow your runtime's skill reload guidance; installation alone does not prove t
 | Status | Meaning |
 | --- | --- |
 | 📋 | Not started |
-| 🔵 | In progress |
+| ▶️ | Advancing on the agreed path |
+| ⚠️ | A specific deviation needs correction or is being corrected |
+| ↪️ | Responsibility transferred to an accepted, started successor |
 | ⌛ | Waiting for a dependency or resource |
 | 🙋 | Waiting for the user |
 | ⏸️ | Deliberately paused |
 | ✅ | Delivered within this task's acceptance scope |
-| ❌ | This attempt failed |
 | 🚫 | Explicitly cancelled |
 
-Elapsed time covers the named task from its first trustworthy start, including waits. It freezes when that task ends. Unknown time is `?m`; unknown progress is `—%`. Estimated progress has a `~`; `100%` requires acceptance of the specific deliverable. An idle runtime does not mean a task is delivered.
+A Task is the user's outcome; a Session is its agreed execution scope. Titles display that Session's evidenced facts without silently reducing the Task's goal. Failure/blockage diagnoses remain in its details; the owner must establish the next disposition. Correction needs a specific deviation, owner, action and review point, and restores the actual state only after effective review. Confirmed transfer requires a successor that accepted and started; it does not mean accepted delivery.
+
+Elapsed time covers the named Session from its first trustworthy start, including corrections and waits. It freezes when that responsibility ends through scoped acceptance, confirmed transfer or explicit cancellation. Unknown time is `?m`; unknown progress is `—%`. Estimated progress has a `~`; `100%` requires acceptance of the specific deliverable. An idle runtime does not mean a task is delivered.
 
 The Skill follows the user's language, keeps task identity stable, and shortens result/action phrases before the task name. It uses the default proportional font with no padding or font installation. English words and emoji stay intact.
 
@@ -96,7 +99,7 @@ The public Skill folder is the maintained source. Installed copies are projectio
 
 A default-current-target rename followed by a matching official readback was verified in an ordinary Codex task with the app tools exposed. This establishes support in that configuration, not in every Codex build or CLI. Other-target permissions and visual width are separate checks.
 
-The self-contained [acceptance cases](codex-skill/activity-title/references/acceptance-cases.md) cover task-wide elapsed time, terminal-state freezing, failure/recovery, unknown data, milestone progress, Chinese/English width, idempotent updates, and unavailable or mismatching tool responses. They are synthetic behavioral checks, not a promise of automatic UI or background testing.
+The self-contained [acceptance cases](codex-skill/activity-title/references/acceptance-cases.md) cover task-wide elapsed time, ended-scope freezing, failure dispositions, correction/review, confirmed transfer, unknown data, milestone progress, Chinese/English width, idempotent updates, and unavailable or mismatching tool responses. They are synthetic behavioral checks, not a promise of automatic UI or background testing.
 
 ## 中文
 
@@ -110,7 +113,7 @@ The self-contained [acceptance cases](codex-skill/activity-title/references/acce
 
 ```text
 状态 │ 项目图标短任务 │ 耗时 │ 估算%已达成→当前动作
-🔵 │ 📄报告整理 │ 18m │ ~60%提纲已定→补引用
+▶️ │ 📄报告整理 │ 18m │ ~60%提纲已定→补引用
 🙋 │ 🧪功能验证 │ 42m │ —%等待样本
 ✅ │ 🔧导出修复 │ 12m │ 100%验收通过
 ```
@@ -119,6 +122,8 @@ The self-contained [acceptance cases](codex-skill/activity-title/references/acce
 
 以上都是合成示例。普通 Session 有官方标题读写工具时可改自己的标题，不要求 dot；改其他任务还需要目标访问能力和明确授权。CLI 等环境若缺少这些官方工具，只生成建议，安装 Skill 不会增加权限。安装后说“用 $activity-title，在任务状态变化时更新当前标题”；只想看候选标题，就说“只建议标题，不修改”。官方改名工具不可用时只提供建议。
 
-耗时对应标题这项工作的首次开始到业务结束，包含等待，结束后冻结。未知写 `?m` / `—%`，进度估算带 `~`，具体交付通过验收才显示 `100%`。它按事件更新，不是后台实时计时器；默认比例字体，窄列表仍可能省略右侧文字。
+▶️ 表示正常推进；⚠️ 表示具体偏差待纠正或正在纠偏，须有负责人、动作与复核点，复核有效才恢复真实状态；↪️ 须有真实承接并已开始的后继。需用户协助用 🙋，等具体外部条件用 ⌛，明确暂停用 ⏸️。失败与阻塞是详情里的临时诊断，负责人仍须落实处置，不能永久留叉或擅自取消。已验收的旧 Session 保留 ✅，转交本身不代表验收。
+
+耗时对应标题这项 Session 范围的首次开始，包含纠偏与等待；验收、真实转交或明确取消使该范围责任结束后才冻结。未知写 `?m` / `—%`，进度估算带 `~`，具体交付通过验收才显示 `100%`。它按事件更新，不是后台实时计时器；默认比例字体，窄列表仍可能省略右侧文字。
 
 MIT licensed. Independent community project; not affiliated with OpenAI.
